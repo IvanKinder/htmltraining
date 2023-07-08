@@ -777,7 +777,7 @@ header {
     url("src/images/ya.svg"),
     url("src/images/wb.svg"),
     url("src/images/ozon.svg");
-    background-position: 1% 35%, 5% 99%,100% 36%, 64% 100%;
+    background-position: 1% 35%, 5% 99%, 100% 36%, 64% 100%;
     background-repeat: no-repeat;
     height: 56%;
 }
@@ -800,5 +800,82 @@ header {
     background: url("src/images/big_car.svg");
     background-position: 100% 100%;
     background-repeat: no-repeat;
-    height: 42.2%;
+    height: 38.3%;
+    position: relative;
+    top: -8px;
+}
+
+.prefer-card-5-images {
+    background: url("src/images/office.svg");
+    background-position: 48% 100%;
+    background-repeat: no-repeat;
+    height: 56%
+}
+
+.content-catalog {
+    margin-top: 59px;
+}
+
+.content-catalog-title {
+    display: flex;
+    width: 240px;
+    justify-content: space-between;
+}
+
+.content-catalog-title-bold {
+    color: #282828;
+    font-family: Rubik, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.1px;
+}
+
+.content-catalog-title-little,
+.content-catalog-title-slash {
+    color: #A9A9A9;
+    font-family: Rubik, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    align-self: center;
+}
+
+.catalog-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 28px;
+    gap: 24px;
+}
+
+.catalog-product > img {
+    width: 302px;
+    height: 402px;
+}
+
+.product-annotation {
+    margin-top: 12px;
+    height: 139px;
+}
+
+.product-annotation-text {
+    color: #282828;
+    font-family: Rubik, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+
+.product-annotation-price {
+    color: #282828;
+    font-family: Rubik, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 12px;
+    position: absolute;
 }
