@@ -38,13 +38,48 @@
     </div>
 </header>
 <top>
-    <div class="top-grid">
-        <div>
-            <button class="top-catalog-btn">
-                <img src="src/icons/3lines.svg">
-                <span class="top-catalog-and-search-text">Каталог</span>
-            </button>
+    <div class="mobile-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <g clip-path="url(#clip0_17_782)">
+                <path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z" fill="#282828"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_17_782">
+                    <rect width="24" height="24" fill="white"/>
+                </clipPath>
+            </defs>
+        </svg>
+        <div class="mobile-controls">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <g opacity="0.8">
+                    <path d="M16.6667 15.8333V17.5H3.33337V15.8333C3.33337 14.9493 3.68456 14.1014 4.30968 13.4763C4.93481 12.8512 5.78265 12.5 6.66671 12.5H13.3334C14.2174 12.5 15.0653 12.8512 15.6904 13.4763C16.3155 14.1014 16.6667 14.9493 16.6667 15.8333Z" stroke="#282828" stroke-width="1.43015" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.0001 9.16667C11.841 9.16667 13.3334 7.67428 13.3334 5.83333C13.3334 3.99238 11.841 2.5 10.0001 2.5C8.15913 2.5 6.66675 3.99238 6.66675 5.83333C6.66675 7.67428 8.15913 9.16667 10.0001 9.16667Z" stroke="#282828" stroke-width="1.43015" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <g opacity="0.8">
+                    <path d="M15.8795 2.84757C16.4357 3.07803 16.9411 3.41583 17.3667 3.84166C17.7926 4.26729 18.1304 4.77265 18.3608 5.32887C18.5913 5.88508 18.7099 6.48126 18.7099 7.08333C18.7099 7.6854 18.5913 8.28158 18.3608 8.83779C18.1304 9.39401 17.7926 9.89937 17.3667 10.325L16.4834 11.2083L10.0001 17.6917L3.51672 11.2083L2.63339 10.325C1.77365 9.46525 1.29065 8.29919 1.29065 7.08333C1.29065 5.86747 1.77365 4.70141 2.63339 3.84166C3.49314 2.98192 4.6592 2.49892 5.87506 2.49892C7.09092 2.49892 8.25698 2.98192 9.11673 3.84166L10.0001 4.725L10.8834 3.84166C11.309 3.41583 11.8144 3.07803 12.3706 2.84757C12.9268 2.6171 13.523 2.49847 14.1251 2.49847C14.7271 2.49847 15.3233 2.6171 15.8795 2.84757Z" stroke="#282828" stroke-width="1.43" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <g opacity="0.8" clip-path="url(#clip0_17_786)">
+                    <path d="M7.49984 18.3333C7.96007 18.3333 8.33317 17.9602 8.33317 17.5C8.33317 17.0397 7.96007 16.6666 7.49984 16.6666C7.0396 16.6666 6.6665 17.0397 6.6665 17.5C6.6665 17.9602 7.0396 18.3333 7.49984 18.3333Z" stroke="#282828" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M16.6666 18.3333C17.1268 18.3333 17.4999 17.9602 17.4999 17.5C17.4999 17.0397 17.1268 16.6666 16.6666 16.6666C16.2063 16.6666 15.8333 17.0397 15.8333 17.5C15.8333 17.9602 16.2063 18.3333 16.6666 18.3333Z" fill="#282828" stroke="#282828" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M0.833374 0.833313H4.16671L6.40004 11.9916C6.47624 12.3753 6.68496 12.7199 6.98966 12.9652C7.29436 13.2105 7.67562 13.3408 8.06671 13.3333H16.1667C16.5578 13.3408 16.9391 13.2105 17.2438 12.9652C17.5484 12.7199 17.7572 12.3753 17.8334 11.9916L19.1667 4.99998H5.00004" stroke="#282828" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_17_786">
+                        <rect width="20" height="20" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
         </div>
+    </div>
+    <div class="top-grid">
+        <button class="top-catalog-btn">
+            <img src="src/icons/3lines.svg">
+            <span class="top-catalog-and-search-text">Каталог</span>
+        </button>
         <div class="top-search-form">
             <input class="top-search-field" type="search" placeholder="Напишите, что вы ищете...">
             <div class="top-search-btn-background">
@@ -53,16 +88,32 @@
                 </button>
             </div>
         </div>
-        <div class="top-login-btn controls">
-            <img class="top-controls-icon" src="src/icons/user.svg">
-            <span class="top-controls-text">Войти</span>
+        <div id="top-login-btn" class="top-login-btn controls">
+            <svg id="top-login-icon" class="top-controls-icon" xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+                <path d="M17.1666 15.8333V17.5H3.83325V15.8333C3.83325 14.9493 4.18444 14.1014 4.80956 13.4763C5.43468 12.8512 6.28253 12.5 7.16659 12.5H13.8333C14.7173 12.5 15.5652 12.8512 16.1903 13.4763C16.8154 14.1014 17.1666 14.9493 17.1666 15.8333Z" stroke="#282828" stroke-width="1.43015" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10.5 9.16667C12.3409 9.16667 13.8333 7.67428 13.8333 5.83333C13.8333 3.99238 12.3409 2.5 10.5 2.5C8.65901 2.5 7.16663 3.99238 7.16663 5.83333C7.16663 7.67428 8.65901 9.16667 10.5 9.16667Z" stroke="#282828" stroke-width="1.43015" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span id="top-login-name" class="top-controls-text top-name">Войти</span>
         </div>
-        <div class="top-favorites-btn controls">
-            <img class="top-controls-icon" src="src/icons/favotites.svg">
-            <span class="top-controls-text">Избранное</span></div>
-        <div class="top-cart-btn controls">
-            <img class="top-controls-icon" src="src/icons/cart.svg">
-            <span class="top-controls-text">Корзина</span></div>
+        <div id="top-favor-btn" class="top-favorites-btn controls">
+            <svg id="top-favor-icon" class="top-controls-icon" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+                <g clip-path="url(#clip0_17_346)">
+                    <path d="M15.8125 2.875C14.145 2.875 12.5445 3.65125 11.5 4.87792C10.4554 3.65125 8.85496 2.875 7.18746 2.875C4.23579 2.875 1.91663 5.19417 1.91663 8.14583C1.91663 11.7683 5.17496 14.72 10.1104 19.205L11.5 20.4604L12.8895 19.1954C17.825 14.72 21.0833 11.7683 21.0833 8.14583C21.0833 5.19417 18.7641 2.875 15.8125 2.875ZM11.5958 17.7771L11.5 17.8729L11.4041 17.7771C6.84246 13.6467 3.83329 10.9154 3.83329 8.14583C3.83329 6.22917 5.27079 4.79167 7.18746 4.79167C8.66329 4.79167 10.1008 5.74042 10.6087 7.05333H12.4008C12.8991 5.74042 14.3366 4.79167 15.8125 4.79167C17.7291 4.79167 19.1666 6.22917 19.1666 8.14583C19.1666 10.9154 16.1575 13.6467 11.5958 17.7771Z" fill="#525252"/>
+                </g>
+                <defs>
+                    <clipPath id="clip0_17_346">
+                        <rect width="23" height="23" fill="white"/>
+                    </clipPath>
+                </defs>
+            </svg>
+            <span id="top-favor-name" class="top-controls-text top-name">Избранное</span></div>
+        <div id="top-cart-btn" class="top-cart-btn controls">
+            <svg id="top-cart-icon" class="top-controls-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                <path d="M7.49996 18.3333C7.9602 18.3333 8.33329 17.9602 8.33329 17.5C8.33329 17.0397 7.9602 16.6666 7.49996 16.6666C7.03972 16.6666 6.66663 17.0397 6.66663 17.5C6.66663 17.9602 7.03972 18.3333 7.49996 18.3333Z" stroke="#525252" stroke-width="1.66" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.6666 18.3333C17.1268 18.3333 17.4999 17.9602 17.4999 17.5C17.4999 17.0397 17.1268 16.6666 16.6666 16.6666C16.2063 16.6666 15.8333 17.0397 15.8333 17.5C15.8333 17.9602 16.2063 18.3333 16.6666 18.3333Z" fill="#525252" stroke="#525252" stroke-width="1.66" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M0.833374 0.833313H4.16671L6.40004 11.9916C6.47624 12.3753 6.68496 12.7199 6.98966 12.9652C7.29436 13.2105 7.67562 13.3408 8.06671 13.3333H16.1667C16.5578 13.3408 16.9391 13.2105 17.2438 12.9652C17.5484 12.7199 17.7572 12.3753 17.8334 11.9916L19.1667 4.99998H5.00004" stroke="#525252" stroke-width="1.66" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span id="top-cart-name" class="top-controls-text top-name">Корзина</span></div>
     </div>
 </top>
 <div class="content">
@@ -198,7 +249,7 @@
             <div class="prefer-card-text-block prefer-card-2">
                 <span class="prefer-card-title">Работаем<br>официально</span>
                 <span class="prefer-card-text">
-                    <br>Белая бухгалтерия:<br>договора, закрывающие<br>документы, ЭДО, оплата<br>по счету или на сайте
+                    <br>Белая бухгалтерия:<br>договора, закрывающие документы, ЭДО, оплата по счету или на сайте
                 </span>
             </div>
             <div class="prefer-card-2-images"></div>
@@ -261,6 +312,17 @@
                                 <div class="scale">270 см</div>
                             </div>
                             <div class="scales-values">
+                                <div class="scale">300 см</div>
+                            </div>
+                            <div class="scales-values-mobile">
+                                <div class="scale">60 см</div>
+                                <div class="scale">90 см</div>
+                                <div class="scale">120 см</div>
+                                <div class="scale">150 см</div>
+                                <div class="scale">180 см</div>
+                                <div class="scale">210 см</div>
+                                <div class="scale selected">240 см</div>
+                                <div class="scale">270 см</div>
                                 <div class="scale">300 см</div>
                             </div>
                         </div>
@@ -661,7 +723,176 @@
         <button id="prev-product-page-btn" class="prev-product-page-btn disabled"></button>
         <button id="next-product-page-btn" class="next-product-page-btn"></button>
     </div>
+    <div class="about-us">
+        <div class="about-us-description">
+            <div class="about-us-title">О нас</div>
+            <div class="about-us-text">Мы надежный поставщик для маркетплейсов. Мы рады предложить<br>вам недорогие, но
+                качественные товары с качественными описаниями<br>и фотографиями.<br>
+                У нас вы можете купить замечательные товары: искуственные елки,<br>гирлянды, пиротехнику, электронику,
+                одежду, обувь, аксессуары.<br>Минимальная сумма заказа всего 10 000 руб.
+            </div>
+        </div>
+        <img src="src/images/sklad.png">
+    </div>
 </div>
+<footer>
+    <div class="footer">
+        <div class="company">
+            <div class="footer-title">
+                Компания
+            </div>
+            <div class="footer-list">
+                <span class="footer-list-item">О компании</span>
+                <span class="footer-list-item">Блог</span>
+                <span class="footer-list-item">Стать поставщиком</span>
+                <span class="footer-list-item">Стать инвестором</span>
+                <span class="footer-list-item">Контакты</span>
+                <span class="footer-list-item">Пользовательское соглашение</span>
+                <span class="footer-list-item">Политика конфиденциальности и оферта</span>
+            </div>
+        </div>
+        <div class="clients">
+            <div class="footer-title">
+                Покупателям
+            </div>
+            <div class="footer-list">
+                <span class="footer-list-item">Каталог</span>
+                <span class="footer-list-item">Корзина</span>
+                <span class="footer-list-item">Избранные товары</span>
+                <span class="footer-list-item">Личный кабинет</span>
+                <span class="footer-list-item">Доставка</span>
+                <span class="footer-list-item">Оплата</span>
+                <span class="footer-list-item">Обмен и возврат</span>
+            </div>
+        </div>
+        <div class="other">
+            <div class="footer-title-gray">
+                Следите за новинками и акциями
+            </div>
+            <div class="footer-contacts">
+                <div class="email-field">
+                    <input class="footer-input" placeholder="Адрес электронной почты">
+                    <button class="footer-e-mail-send"></button>
+                </div>
+                <div>
+                    <span class="footer-littlest-text">
+                        Нажимая кнопку, я соглашаюсь на получение информации,<br>
+                        принимаю условия политики конфиденциальности и<br>пользовательского
+                        соглашения, даю согласие на обработку<br>персональных данных
+                    </span>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <g clip-path="url(#clip0_17_702)">
+                            <path d="M5.51667 8.99167C6.71667 11.35 8.65 13.275 11.0083 14.4833L12.8417 12.65C13.0667 12.425 13.4 12.35 13.6917 12.45C14.625 12.7583 15.6333 12.925 16.6667 12.925C17.125 12.925 17.5 13.3 17.5 13.7583V16.6667C17.5 17.125 17.125 17.5 16.6667 17.5C8.84167 17.5 2.5 11.1583 2.5 3.33333C2.5 2.875 2.875 2.5 3.33333 2.5H6.25C6.70833 2.5 7.08333 2.875 7.08333 3.33333C7.08333 4.375 7.25 5.375 7.55833 6.30833C7.65 6.6 7.58333 6.925 7.35 7.15833L5.51667 8.99167Z"
+                                  fill="#282828"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_17_702">
+                                <rect width="20" height="20" rx="10" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <g clip-path="url(#clip0_17_704)">
+                            <path d="M16.6667 3.33325H3.33335C2.41669 3.33325 1.67502 4.08325 1.67502 4.99992L1.66669 14.9999C1.66669 15.9166 2.41669 16.6666 3.33335 16.6666H16.6667C17.5834 16.6666 18.3334 15.9166 18.3334 14.9999V4.99992C18.3334 4.08325 17.5834 3.33325 16.6667 3.33325ZM16.6667 6.66659L10 10.8333L3.33335 6.66659V4.99992L10 9.16658L16.6667 4.99992V6.66659Z"
+                                  fill="#282828"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_17_704">
+                                <rect width="20" height="20" rx="10" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <g clip-path="url(#clip0_17_706)">
+                            <path d="M9.99998 2.5L3.33331 7.5V17.5H7.49998V11.6667H12.5V17.5H16.6666V7.5L9.99998 2.5Z"
+                                  fill="#282828"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_17_706">
+                                <rect width="20" height="20" rx="10" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="footer-socials">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <g clip-path="url(#clip0_17_708)">
+                            <rect width="40" height="40" fill="white"/>
+                            <path d="M20.9825 27C13.466 27 9.17864 21.7447 9 13H12.7651C12.8888 19.4184 15.6646 22.1371 17.8632 22.6977V13H21.4085V18.5355C23.5796 18.2973 25.8607 15.7748 26.6302 13H30.1755C29.8855 14.4391 29.3075 15.8017 28.4776 17.0025C27.6477 18.2033 26.5837 19.2166 25.3523 19.979C26.7269 20.6756 27.941 21.6615 28.9145 22.8717C29.888 24.082 30.5988 25.489 31 27H27.0974C26.7373 25.6876 26.0054 24.5128 24.9934 23.6228C23.9814 22.7328 22.7343 22.1673 21.4085 21.997V27H20.9825Z"
+                                  fill="#282828"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_17_708">
+                                <rect width="40" height="40" rx="20" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <g clip-path="url(#clip0_17_709)">
+                            <rect width="40" height="40" fill="white"/>
+                            <path d="M28 12.6022L24.9946 28.2923C24.9946 28.2923 24.5741 29.3801 23.4189 28.8584L16.4846 23.3526L16.4524 23.3364C17.3891 22.4654 24.6524 15.7027 24.9698 15.3961C25.4613 14.9214 25.1562 14.6387 24.5856 14.9974L13.8568 22.053L9.71764 20.6108C9.71764 20.6108 9.06626 20.3708 9.00359 19.8491C8.9401 19.3265 9.73908 19.0439 9.73908 19.0439L26.6131 12.1889C26.6131 12.1889 28 11.5579 28 12.6022Z"
+                                  fill="#282828"/>
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_17_709">
+                                <rect width="40" height="40" rx="20" fill="white"/>
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+            <button id="to-top-btn" class="to-top-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="110" height="110" viewBox="0 0 110 110" fill="none">
+                    <g filter="url(#filter0_d_17_718)">
+                        <g clip-path="url(#clip0_17_718)">
+                            <rect x="24" y="86" width="62" height="62" rx="31" transform="rotate(-90 24 86)"
+                                  fill="white"/>
+                            <path d="M39.5 60.1666L43.1425 63.8091L55 51.9774L66.8575 63.8091L70.5 60.1666L55 44.6666L39.5 60.1666Z"
+                                  fill="#282828"/>
+                        </g>
+                    </g>
+                    <defs>
+                        <filter id="filter0_d_17_718" x="0" y="0" width="110" height="110" filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix"
+                                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset/>
+                            <feGaussianBlur stdDeviation="12"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_17_718"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_17_718" result="shape"/>
+                        </filter>
+                        <clipPath id="clip0_17_718">
+                            <rect x="24" y="86" width="62" height="62" rx="31" transform="rotate(-90 24 86)"
+                                  fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <div class="hr">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1440" height="2" viewBox="0 0 1440 2" fill="none">
+            <path d="M1461 1H-21" stroke="#A9A9A9"/>
+        </svg>
+    </div>
+    <div class="bot">
+        <div class="year">© 2022</div>
+        <div class="pay">
+            <img src="src/images/mastercard.png">
+            <img src="src/images/visa.png">
+            <img src="src/images/mir.png">
+        </div>
+    </div>
+</footer>
 <script src="script.js"></script>
 </body>
 </html>

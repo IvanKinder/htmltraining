@@ -33,7 +33,23 @@ const cataligProduct8 = document.getElementById('catalog-product-8');
 const dimentions8 = document.getElementById('dimentions-8');
 const productAnnotation8 = document.getElementById('product-annotation-8');
 const productPriceCartBtn8 = document.getElementById('product-price-cart-btn8');
+const topLoginBtn = document.getElementById('top-login-btn');
+const topLoginIcon = document.getElementById('top-login-icon');
+const topLoginName = document.getElementById('top-login-name');
+const topCartBtn = document.getElementById('top-cart-btn');
+const topCartIcon = document.getElementById('top-cart-icon');
+const topCartName = document.getElementById('top-cart-name');
+const topFavorBtn = document.getElementById('top-favor-btn');
+const topFavorIcon = document.getElementById('top-favor-icon');
+const topFavorName = document.getElementById('top-favor-name');
+const toTopBtn = document.getElementById('to-top-btn');
 
+toTopBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
 nextBtn.addEventListener('click', () => {
     prevBtn.classList.remove('disabled');
     nextBtn.classList.add('disabled');
@@ -44,6 +60,46 @@ prevBtn.addEventListener('click', () => {
     prevBtn.classList.add('disabled');
     productsElpage1.classList.remove('catalog-products-translated');
 });
+nextBtn.addEventListener('mouseover', () => {
+    nextBtn.classList.add('mouseover');
+
+})
+nextBtn.addEventListener('mouseleave', () => {
+    nextBtn.classList.remove('mouseover');
+
+})
+prevBtn.addEventListener('mouseover', () => {
+    prevBtn.classList.add('mouseover');
+
+})
+prevBtn.addEventListener('mouseleave', () => {
+    prevBtn.classList.remove('mouseover');
+
+})
+topFavorBtn.addEventListener('mouseover', () => {
+    topFavorIcon.classList.add('mouseover')
+    topFavorName.classList.add('mouseover')
+})
+topFavorBtn.addEventListener('mouseleave', () => {
+    topFavorIcon.classList.remove('mouseover')
+    topFavorName.classList.remove('mouseover')
+})
+topLoginBtn.addEventListener('mouseover', () => {
+    topLoginIcon.classList.add('mouseover')
+    topLoginName.classList.add('mouseover')
+})
+topLoginBtn.addEventListener('mouseleave', () => {
+    topLoginIcon.classList.remove('mouseover')
+    topLoginName.classList.remove('mouseover')
+})
+topCartBtn.addEventListener('mouseover', () => {
+    topCartIcon.classList.add('mouseover')
+    topCartName.classList.add('mouseover')
+})
+topCartBtn.addEventListener('mouseleave', () => {
+    topCartIcon.classList.remove('mouseover')
+    topCartName.classList.remove('mouseover')
+})
 cataligProduct2.addEventListener('mouseover', () => {
     dimentions2.classList.remove('inactive')
     productPriceCartBtn2.classList.remove('inactive')
