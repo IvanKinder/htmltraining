@@ -100,99 +100,218 @@ topCartBtn.addEventListener('mouseleave', () => {
     topCartIcon.classList.remove('mouseover')
     topCartName.classList.remove('mouseover')
 })
-cataligProduct2.addEventListener('mouseover', () => {
-    dimentions2.classList.remove('inactive')
-    productPriceCartBtn2.classList.remove('inactive')
-    productAnnotation2.classList.add('detail')
-    cataligProduct2.classList.add('mouseover')
-})
-cataligProduct2.addEventListener('mouseleave', () => {
-    dimentions2.classList.add('inactive')
-    productPriceCartBtn2.classList.add('inactive')
-    productAnnotation2.classList.remove('detail')
-    cataligProduct2.classList.remove('mouseover')
-})
-cataligProduct1.addEventListener('mouseover', () => {
+if (document.documentElement.clientWidth > 1000) {
+    cataligProduct2.addEventListener('mouseover', () => {
+        dimentions2.classList.remove('inactive')
+        productPriceCartBtn2.classList.remove('inactive')
+        productAnnotation2.classList.add('detail')
+        cataligProduct2.classList.add('mouseover')
+    })
+    cataligProduct2.addEventListener('mouseleave', () => {
+        dimentions2.classList.add('inactive')
+        productPriceCartBtn2.classList.add('inactive')
+        productAnnotation2.classList.remove('detail')
+        cataligProduct2.classList.remove('mouseover')
+    })
+    cataligProduct1.addEventListener('mouseover', () => {
+        dimentions1.classList.remove('inactive')
+        productPriceCartBtn1.classList.remove('inactive')
+        productAnnotation1.classList.add('detail')
+        cataligProduct1.classList.add('mouseover')
+    })
+    cataligProduct1.addEventListener('mouseleave', () => {
+        dimentions1.classList.add('inactive')
+        productPriceCartBtn1.classList.add('inactive')
+        productAnnotation1.classList.remove('detail')
+        cataligProduct1.classList.remove('mouseover')
+    })
+    cataligProduct3.addEventListener('mouseover', () => {
+        dimentions3.classList.remove('inactive')
+        productPriceCartBtn3.classList.remove('inactive')
+        productAnnotation3.classList.add('detail')
+        cataligProduct3.classList.add('mouseover')
+    })
+    cataligProduct3.addEventListener('mouseleave', () => {
+        dimentions3.classList.add('inactive')
+        productPriceCartBtn3.classList.add('inactive')
+        productAnnotation3.classList.remove('detail')
+        cataligProduct3.classList.remove('mouseover')
+    })
+    cataligProduct4.addEventListener('mouseover', () => {
+        dimentions4.classList.remove('inactive')
+        productPriceCartBtn4.classList.remove('inactive')
+        productAnnotation4.classList.add('detail')
+        cataligProduct4.classList.add('mouseover')
+    })
+    cataligProduct4.addEventListener('mouseleave', () => {
+        dimentions4.classList.add('inactive')
+        productPriceCartBtn4.classList.add('inactive')
+        productAnnotation4.classList.remove('detail')
+        cataligProduct4.classList.remove('mouseover')
+    })
+    cataligProduct5.addEventListener('mouseover', () => {
+        dimentions5.classList.remove('inactive')
+        productPriceCartBtn5.classList.remove('inactive')
+        productAnnotation5.classList.add('detail')
+        cataligProduct5.classList.add('mouseover')
+    })
+    cataligProduct5.addEventListener('mouseleave', () => {
+        dimentions5.classList.add('inactive')
+        productPriceCartBtn5.classList.add('inactive')
+        productAnnotation5.classList.remove('detail')
+        cataligProduct5.classList.remove('mouseover')
+    })
+    cataligProduct6.addEventListener('mouseover', () => {
+        dimentions6.classList.remove('inactive')
+        productPriceCartBtn6.classList.remove('inactive')
+        productAnnotation6.classList.add('detail')
+        cataligProduct6.classList.add('mouseover')
+    })
+    cataligProduct6.addEventListener('mouseleave', () => {
+        dimentions6.classList.add('inactive')
+        productPriceCartBtn6.classList.add('inactive')
+        productAnnotation6.classList.remove('detail')
+        cataligProduct6.classList.remove('mouseover')
+    })
+    cataligProduct7.addEventListener('mouseover', () => {
+        dimentions7.classList.remove('inactive')
+        productPriceCartBtn7.classList.remove('inactive')
+        productAnnotation7.classList.add('detail')
+        cataligProduct7.classList.add('mouseover')
+    })
+    cataligProduct7.addEventListener('mouseleave', () => {
+        dimentions7.classList.add('inactive')
+        productPriceCartBtn7.classList.add('inactive')
+        productAnnotation7.classList.remove('detail')
+        cataligProduct7.classList.remove('mouseover')
+    })
+    cataligProduct8.addEventListener('mouseover', () => {
+        dimentions8.classList.remove('inactive')
+        productPriceCartBtn8.classList.remove('inactive')
+        productAnnotation8.classList.add('detail')
+        cataligProduct8.classList.add('mouseover')
+    })
+    cataligProduct8.addEventListener('mouseleave', () => {
+        dimentions8.classList.add('inactive')
+        productPriceCartBtn8.classList.add('inactive')
+        productAnnotation8.classList.remove('detail')
+        cataligProduct8.classList.remove('mouseover')
+    })
+} else {
+    cataligProduct1.addEventListener('mouseover', () => {
+        productPriceCartBtn1.classList.add('mouseover')
+    })
+    cataligProduct1.addEventListener('mouseleave', () => {
+        productPriceCartBtn1.classList.remove('mouseover')
+    })
+    cataligProduct2.addEventListener('mouseover', () => {
+        productPriceCartBtn2.classList.add('mouseover')
+    })
+    cataligProduct2.addEventListener('mouseleave', () => {
+        productPriceCartBtn2.classList.remove('mouseover')
+    })
+    cataligProduct3.addEventListener('mouseover', () => {
+        productPriceCartBtn3.classList.add('mouseover')
+    })
+    cataligProduct3.addEventListener('mouseleave', () => {
+        productPriceCartBtn3.classList.remove('mouseover')
+    })
+    cataligProduct4.addEventListener('mouseover', () => {
+        productPriceCartBtn4.classList.add('mouseover')
+    })
+    cataligProduct4.addEventListener('mouseleave', () => {
+        productPriceCartBtn4.classList.remove('mouseover')
+    })
+    cataligProduct5.addEventListener('mouseover', () => {
+        productPriceCartBtn5.classList.add('mouseover')
+    })
+    cataligProduct5.addEventListener('mouseleave', () => {
+        productPriceCartBtn5.classList.remove('mouseover')
+    })
+    cataligProduct6.addEventListener('mouseover', () => {
+        productPriceCartBtn6.classList.add('mouseover')
+    })
+    cataligProduct6.addEventListener('mouseleave', () => {
+        productPriceCartBtn6.classList.remove('mouseover')
+    })
+    cataligProduct7.addEventListener('mouseover', () => {
+        productPriceCartBtn7.classList.add('mouseover')
+    })
+    cataligProduct7.addEventListener('mouseleave', () => {
+        productPriceCartBtn7.classList.remove('mouseover')
+    })
+    cataligProduct8.addEventListener('mouseover', () => {
+        productPriceCartBtn8.classList.add('mouseover')
+    })
+    cataligProduct8.addEventListener('mouseleave', () => {
+        productPriceCartBtn8.classList.remove('mouseover')
+    })
+}
+
+if (document.documentElement.clientWidth <= 1000) {
     dimentions1.classList.remove('inactive')
     productPriceCartBtn1.classList.remove('inactive')
     productAnnotation1.classList.add('detail')
-    cataligProduct1.classList.add('mouseover')
-})
-cataligProduct1.addEventListener('mouseleave', () => {
+    // cataligProduct1.classList.add('mouseover')
+    dimentions2.classList.remove('inactive')
+    productPriceCartBtn2.classList.remove('inactive')
+    productAnnotation2.classList.add('detail')
+    // cataligProduct2.classList.add('mouseover')
+    dimentions3.classList.remove('inactive')
+    productPriceCartBtn3.classList.remove('inactive')
+    productAnnotation3.classList.add('detail')
+    // cataligProduct3.classList.add('mouseover')
+    dimentions4.classList.remove('inactive')
+    productPriceCartBtn4.classList.remove('inactive')
+    productAnnotation4.classList.add('detail')
+    // cataligProduct4.classList.add('mouseover')
+    dimentions5.classList.remove('inactive')
+    productPriceCartBtn5.classList.remove('inactive')
+    productAnnotation5.classList.add('detail')
+    // cataligProduct5.classList.add('mouseover')
+    dimentions6.classList.remove('inactive')
+    productPriceCartBtn6.classList.remove('inactive')
+    productAnnotation6.classList.add('detail')
+    // cataligProduct6.classList.add('mouseover')
+    dimentions7.classList.remove('inactive')
+    productPriceCartBtn7.classList.remove('inactive')
+    productAnnotation7.classList.add('detail')
+    // cataligProduct7.classList.add('mouseover')
+    dimentions8.classList.remove('inactive')
+    productPriceCartBtn8.classList.remove('inactive')
+    productAnnotation8.classList.add('detail')
+    // cataligProduct8.classList.add('mouseover')
+} else {
     dimentions1.classList.add('inactive')
     productPriceCartBtn1.classList.add('inactive')
     productAnnotation1.classList.remove('detail')
     cataligProduct1.classList.remove('mouseover')
-})
-cataligProduct3.addEventListener('mouseover', () => {
-    dimentions3.classList.remove('inactive')
-    productPriceCartBtn3.classList.remove('inactive')
-    productAnnotation3.classList.add('detail')
-    cataligProduct3.classList.add('mouseover')
-})
-cataligProduct3.addEventListener('mouseleave', () => {
+    dimentions2.classList.add('inactive')
+    productPriceCartBtn2.classList.add('inactive')
+    productAnnotation2.classList.remove('detail')
+    cataligProduct2.classList.remove('mouseover')
     dimentions3.classList.add('inactive')
     productPriceCartBtn3.classList.add('inactive')
     productAnnotation3.classList.remove('detail')
     cataligProduct3.classList.remove('mouseover')
-})
-cataligProduct4.addEventListener('mouseover', () => {
-    dimentions4.classList.remove('inactive')
-    productPriceCartBtn4.classList.remove('inactive')
-    productAnnotation4.classList.add('detail')
-    cataligProduct4.classList.add('mouseover')
-})
-cataligProduct4.addEventListener('mouseleave', () => {
     dimentions4.classList.add('inactive')
     productPriceCartBtn4.classList.add('inactive')
     productAnnotation4.classList.remove('detail')
     cataligProduct4.classList.remove('mouseover')
-})
-cataligProduct5.addEventListener('mouseover', () => {
-    dimentions5.classList.remove('inactive')
-    productPriceCartBtn5.classList.remove('inactive')
-    productAnnotation5.classList.add('detail')
-    cataligProduct5.classList.add('mouseover')
-})
-cataligProduct5.addEventListener('mouseleave', () => {
     dimentions5.classList.add('inactive')
     productPriceCartBtn5.classList.add('inactive')
     productAnnotation5.classList.remove('detail')
     cataligProduct5.classList.remove('mouseover')
-})
-cataligProduct6.addEventListener('mouseover', () => {
-    dimentions6.classList.remove('inactive')
-    productPriceCartBtn6.classList.remove('inactive')
-    productAnnotation6.classList.add('detail')
-    cataligProduct6.classList.add('mouseover')
-})
-cataligProduct6.addEventListener('mouseleave', () => {
     dimentions6.classList.add('inactive')
     productPriceCartBtn6.classList.add('inactive')
     productAnnotation6.classList.remove('detail')
     cataligProduct6.classList.remove('mouseover')
-})
-cataligProduct7.addEventListener('mouseover', () => {
-    dimentions7.classList.remove('inactive')
-    productPriceCartBtn7.classList.remove('inactive')
-    productAnnotation7.classList.add('detail')
-    cataligProduct7.classList.add('mouseover')
-})
-cataligProduct7.addEventListener('mouseleave', () => {
     dimentions7.classList.add('inactive')
     productPriceCartBtn7.classList.add('inactive')
     productAnnotation7.classList.remove('detail')
     cataligProduct7.classList.remove('mouseover')
-})
-cataligProduct8.addEventListener('mouseover', () => {
-    dimentions8.classList.remove('inactive')
-    productPriceCartBtn8.classList.remove('inactive')
-    productAnnotation8.classList.add('detail')
-    cataligProduct8.classList.add('mouseover')
-})
-cataligProduct8.addEventListener('mouseleave', () => {
     dimentions8.classList.add('inactive')
     productPriceCartBtn8.classList.add('inactive')
     productAnnotation8.classList.remove('detail')
     cataligProduct8.classList.remove('mouseover')
-})
+}

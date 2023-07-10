@@ -90,6 +90,7 @@ header {
     gap: 12px;
     flex-shrink: 0;
     cursor: pointer;
+    height: 40px;
 }
 
 .top-search-form {
@@ -208,6 +209,18 @@ header {
     align-content: baseline;
     animation: slideshow 50s infinite;
     animation-timing-function: cubic-bezier(.83, -0.01, .17, .99);
+}
+
+.price-mobile {
+    display: none;
+}
+
+.about-us-description > img {
+    display: none;
+}
+
+.footer-mobile-arrow {
+    display: none;
 }
 
 @keyframes slideshow {
@@ -730,6 +743,10 @@ header {
     height: 16px;
 }
 
+.mobile-cart {
+    display: none;
+}
+
 .slide-2-btn {
     border-radius: 61px;
     background: linear-gradient(17deg, #9E0CAA 0%, #242AFF 42.32%, #23FBE1 100%), linear-gradient(45deg, #0634FD 0%, #00FCDE 48.44%, #EC34FE 94.79%);
@@ -1059,6 +1076,10 @@ header {
     top: -391px;
 }
 
+.heart-favorite > g > path:hover {
+    stroke: #2A5CF6;
+}
+
 .about-us {
     position: absolute;
     top: 1494px;
@@ -1097,7 +1118,7 @@ header {
     line-height: 140%;
 }
 
-.footer-title {
+.footer-title > span {
     color: #282828;
     font-family: Rubik, sans-serif;
     font-size: 18px;
@@ -1167,8 +1188,15 @@ header {
     cursor: pointer;
 }
 
+.email-field {
+    height: 69px;
+    width: 360px;
+}
+
 .footer-input:focus {
     outline: none;
+    box-sizing: border-box;
+    border: 1px solid blue;
 }
 
 .footer-input::placeholder {
@@ -1328,6 +1356,7 @@ header {
     .content {
         background: none;
         padding: 0;
+        height: 1520px;
     }
 
     .content-parent-carousel {
@@ -1521,6 +1550,7 @@ header {
 
     .content-catalog-title {
         width: 211px;
+        margin-left: 20px;
     }
 
     .content-catalog-title-bold {
@@ -1533,14 +1563,20 @@ header {
         font-size: 16px;
     }
 
+    .catalog-product:hover {
+        box-shadow: 0px 0px 20px 0px rgba(42, 92, 246, 0.30);
+    }
+
     .catalog-products {
-        grid-template-columns: repeat(9, 180px);
+        grid-template-columns: repeat(9, 182px);
         margin: 0;
-        top: 12px;
+        left: 0;
+        width: 100%;
         position: relative;
         overflow: scroll;
         gap: 12px;
-        height: 480px;
+        height: 515px;
+        padding: 20px 0 20px 20px;
     }
 
     .catalog-product-image {
@@ -1552,21 +1588,24 @@ header {
 
     .heart-favorite {
         position: relative;
-        left: 134px;
-        top: -400px;
+        left: 140px;
+        top: -405px;
+        transform: scale(0.7);
     }
 
     .content-catalog {
         margin-top: 20px;
-        padding: 0 0 0 24px;
     }
 
     .product-annotation {
         margin-top: -210px;
+        gap: 0;
+        height: 245px;
     }
 
     .product-annotation-text {
         font-size: 12px;
+        height: 65px;
     }
 
     .dimentions-2 > span {
@@ -1587,6 +1626,10 @@ header {
         gap: 6px;
     }
 
+    .scales {
+        margin-top: 2px;
+    }
+
     .scale {
         font-size: 10px;
     }
@@ -1596,6 +1639,20 @@ header {
         height: 38px;
         grid-template-columns: 1fr;
         justify-items: center;
+        background: none;
+    }
+
+    .product-price-cart-btn.mouseover {
+        background: linear-gradient(17deg, #9E0CAA 0%, #242AFF 42.32%, #23FBE1 100%);
+    }
+
+    .product-price-cart-btn > svg {
+        display: none;
+    }
+
+    .product-price-cart-btn.mouseover > div > svg > g > path{
+        display: block;
+        stroke: white;
     }
 
     .product-price-cart-btn > span,
@@ -1605,10 +1662,144 @@ header {
 
     .product-price-container {
         margin-left: 5px;
+        margin-top: 22px;
     }
 
     .next-product-page-btn,
     .prev-product-page-btn {
         display: none;
+    }
+
+    .product-annotation.detail {
+        grid-template-rows: auto auto 38px;
+    }
+
+    .price-mobile {
+        display: block;
+        color: #282828;
+        font-family: Rubik, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140%;
+    }
+
+    .mobile-cart {
+        display: block;
+        position: relative;
+        left: -3px;
+    }
+
+    .about-us {
+        position: initial;
+        grid-template-columns: 1fr;
+        padding: 8px 20px;
+        width: 96%;
+    }
+
+    .about-us-title {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .about-us-text {
+        font-size: 16px;
+    }
+
+    .about-us > img {
+        display: none;
+    }
+
+    .about-us-description > img {
+        display: block;
+        margin-top: 10px;
+    }
+
+    .about-us-description {
+        width: 100%;
+        display: block;
+    }
+
+    .footer {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 30px 20px;
+        grid-template-areas: "c"
+                             "a"
+                             "b";
+    }
+    .bot {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        grid-template-areas: "b"
+                             "a";
+        padding: 0 24px 24px;
+    }
+
+    .company {
+        grid-area: a;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-title-clients {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-mobile-arrow {
+        display: block;
+        justify-self: end;
+    }
+
+    .clients {
+        grid-area: b;
+    }
+
+    .clients > .footer-list > .footer-list-item {
+        margin-left: 13px;
+    }
+
+    .hr,
+    .company > .footer-list {
+        display: none;
+    }
+
+    .to-top-btn {
+        position: relative;
+        top: -89px;
+        left: 285px;
+    }
+
+    .footer-contacts {
+        grid-template-rows: 63px;
+        gap: 10px;
+    }
+
+    .other {
+        grid-area: c;
+        justify-self: start;
+        height: 330px;
+    }
+
+    .footer-input {
+        width: 368px;
+    }
+
+    .email-field {
+        margin-top: 10px;
+    }
+
+    .footer-e-mail-send {
+        top: -47px;
+        left: 339px;
+    }
+
+    .year {
+        grid-area: a;
+    }
+
+    .pay {
+        grid-area: b;
     }
 }
